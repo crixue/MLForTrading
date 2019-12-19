@@ -136,6 +136,7 @@ def plot_signal_returns(prices, signal_return_tuple, title, xlabel="Date", ylabe
     :param titles:
     :return:
     """
+
     fig, ax = plt.subplots()
     ax.plot(
         prices.index,
@@ -143,7 +144,6 @@ def plot_signal_returns(prices, signal_return_tuple, title, xlabel="Date", ylabe
     )
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel)
-
     signal_return = signal_return_tuple[0]
     long_short_signals = signal_return_tuple[1]
     lookahead_days = signal_return_tuple[2]
