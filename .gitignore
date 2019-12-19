@@ -21,3 +21,7 @@ deploy_key_rsa
 *.mp3
 *.mdi
 output1
+
+.idea
+spy_history.db
+venv
