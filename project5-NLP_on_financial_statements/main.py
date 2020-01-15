@@ -415,13 +415,13 @@ if __name__ == '__main__':
                         'file_date': file_date})
     project_helper.print_ten_k_data(ten_ks_by_ticker[example_ticker][:5], ['cik', 'file', 'file_date'])
 
-    # del document
-    # del documents
-    # del filling
-    # del filling_documents
-    # del filling_documents_by_ticker
-    # del raw_fillings
-    # del raw_fillings_by_ticker
+    del document
+    del documents
+    del filling
+    del filling_documents
+    del filling_documents_by_ticker
+    del raw_fillings
+    del raw_fillings_by_ticker
 
     for ticker, ten_ks in ten_ks_by_ticker.items():
         for ten_k in tqdm(ten_ks, desc='Cleaning {} 10-Ks'.format(ticker), unit='10-K'):
